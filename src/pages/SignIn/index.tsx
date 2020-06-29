@@ -11,6 +11,7 @@ import {
   Text,
   FBLoginContainer,
   FBLoginButton,
+  Icon,
   FBLoginButtonText,
 } from './styles';
 
@@ -63,6 +64,7 @@ const SignIn: React.FC = () => {
 
       <FBLoginContainer>
         <FBLoginButton onPress={handleFBLogin}>
+          <Icon />
           <FBLoginButtonText>Ou faça login com o Facebook</FBLoginButtonText>
         </FBLoginButton>
       </FBLoginContainer>

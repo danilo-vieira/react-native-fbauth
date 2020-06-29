@@ -1,6 +1,7 @@
 import styled from 'styled-components/native';
 import LinearGradient from 'react-native-linear-gradient';
 import { RectButton } from 'react-native-gesture-handler';
+import FIcon from 'react-native-vector-icons/Feather';
 
 export const Container = styled(LinearGradient).attrs({
   colors: ['#797ED1', '#76B2DE'],
@@ -36,10 +37,21 @@ export const FBLoginContainer = styled.View`
   justify-content: flex-end;
 `;
 
+export const Icon = styled(FIcon).attrs({
+  name: 'facebook',
+  size: 24,
+})`
+  color: #ffffff;
+  background-color: #385898;
+  padding: 3px;
+`;
+
 export const FBLoginButton = styled(RectButton)`
+  flex-direction: row;
   padding: 16px;
   margin-bottom: 60px;
   align-items: center;
+  justify-content: space-around;
 
   background-color: #2f3152;
   border-radius: 8px;
